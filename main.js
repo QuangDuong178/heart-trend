@@ -112,7 +112,7 @@ document.onpointerdown = function (e) {
       tX += desX * 0.1;
       tY += desY * 0.1;
       applyTranform(odrag);
-      playSpin(false);
+      playSpin(true);
       if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
         clearInterval(odrag.timer);
         playSpin(true);
