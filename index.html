@@ -4,40 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love you</title>
+    <title>My Love</title>
+    <link rel="stylesheet" href="start.css" />
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div id="drag-container">
-      <div id="spin-container">
-        <img src="./img/couple1.jpg" alt="" />
-        <img src="./img/couple2.jpg" alt="" />
-        <img src="./img/couple3.jpg" alt="" />
-        <img src="./img/couple4.jpg" alt="" />
-        <img src="./img/couple5.jpg" alt="" />
-        <img src="./img/couple6.jpg" alt="" />
-        <img src="./img/couple7.jpg" alt="" />
-        <img src="./img/couple8.jpg" alt="" />
-        <img src="./img/cont.jpeg" alt="" />
+    <div class="grid"></div>
 
-        <p>Yêu Huyền nhiều lắm</p>
-      </div>
+    <div class="warning"></div>
 
-      <div id="ground"></div>
+    <div class="base">
+      <button id="activate">
+        <span></span>
+      </button>
     </div>
 
-    <div id="music-container"></div>
-    <div id="canva">
-      <canvas id="canvas"></canvas>
+    <div class="box opened" id="cover">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <span></span><span></span>
     </div>
-    <audio src="./music.mp3" autoplay loop></audio>
-    <script src="main.js"></script>
+
+    <div class="hinges"></div>
+
+    <div class="text">Yêu Huyền Căng Cực</div>
+
+    <div id="panel2">
+      <div id="msg">Quang Dương sai roài mà</div>
+      <span id="again">Huyền chọn lại nhé</span>
+    </div>
+
+    <div id="panel">
+      <div id="msg">Huyền không giận Quang Dương nữa nhé</div>
+      <div id="time">9</div>
+      <span id="abort"><a href="love.html">Dạ vâng ạ</a></span>
+      <span id="no">Đéo</span>
+    </div>
+
+    <div id="turn-off"></div>
+    <div id="closing"></div>
+
+    <div id="restart"><button id="reload"></button></div>
+
+    <div id="mute"></div>
+
+    <audio id="alarm">
+      <source
+        src="https://josetxu.com/demos/sounds/self-destruct-alarm-count.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="start.js"></script>
   </body>
 </html>
