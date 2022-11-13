@@ -242,7 +242,7 @@ button#activate.pushed {
 }
 
 div#panel:before {
-  content: "Biết sai rồi";
+  content: "Anh biết sai rồi mà";
   top: 3vmin;
   position: relative;
   font-size: 8vmin;
