@@ -369,9 +369,6 @@ div#panel2::before {
   border-radius: 0.25vmin;
   font-weight: bold;
   animation: highlight 1s 0s infinite;
-  position: absolute;
-  top: 70%;
-  right: 22%;
 }
 
 #again:hover {
