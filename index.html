@@ -32,7 +32,7 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
 
-  <body>
+  <body onclick="runVideo()">
     <nav>
       <div class="logo">
         <a href="index.html">From Quang Duong<em>With Love</em></a>
@@ -49,7 +49,7 @@
           <img class="" src="1000002253.jpg" />
         </div>
         <div class="col-md-4 col-sm-6">
-          <video id="autoplay" class="video-overlay" loop="" autoplay="" muted>
+          <video id="autoplay" class="video-overlay" loop="" autoplay="">
             <source src="quang-huyen.mp4" type="video/mp4" />
           </video>
         </div>
@@ -212,6 +212,12 @@
         document.write(
           '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
         );
+    </script>
+
+    <script>
+      function runVideo() {
+        document.getElementById("autoplay").play();
+      }
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
